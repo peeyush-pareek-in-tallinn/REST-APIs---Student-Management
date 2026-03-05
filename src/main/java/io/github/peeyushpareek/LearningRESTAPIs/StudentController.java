@@ -1,5 +1,6 @@
 package io.github.peeyushpareek.LearningRESTAPIs;
 
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class StudentController {
     }
 
     @PostMapping("/student/add")
-    public StudentDTO addStudent(@RequestBody StudentDTO studentDTO) {
+    public StudentDTO addStudent(@RequestBody @Valid StudentDTO studentDTO) {
         return studentService.addStudent(studentDTO);
     }
 
