@@ -53,17 +53,17 @@ POST `/students`
 
 ## Running the Project
 
-Clone the repository:
-    git clone https://github.com/peeyush-pareek-in-tallinn/REST-APIs--Student-Management.git
+Clone the repository: 
+  git clone https://github.com/peeyush-pareek-in-tallinn/REST-APIs--Student-Management.git
 
-Navigate to the project directory
-    cd REST-APIs--Student-Management
+Navigate to the project directory: 
+  cd REST-APIs--Student-Management
 
-Run the application
-    mvn spring-boot:run
+Run the application: 
+  mvn spring-boot:run
 
-The API will start at:
-    http://localhost:8080
+The API will start at: 
+  http://localhost:8080
 
 
 ## Learning Goals
@@ -74,6 +74,7 @@ This project helped me practice:
 - Structuring backend services
 - Implementing CRUD operations
 - Understanding controller-service architecture
+
 
 
 Author
