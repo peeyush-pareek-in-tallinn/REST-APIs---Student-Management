@@ -80,7 +80,7 @@ This project helped me practice:
 ---
 
 
-Author
+## Author
 
 Peeyush Pareek
 Aspiring Backend Developer focusing on Rust and Java
