@@ -83,4 +83,4 @@ This project helped me practice:
 ## Author
 
 Peeyush Pareek
-Aspiring Backend Developer focusing on Rust and Java
+Aspiring Backend Java Developer
