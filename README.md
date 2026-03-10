@@ -65,6 +65,8 @@ Run the application:
 The API will start at: 
   http://localhost:8080
 
+---
+
 
 ## Learning Goals
 
@@ -75,6 +77,7 @@ This project helped me practice:
 - Implementing CRUD operations
 - Understanding controller-service architecture
 
+---
 
 
 Author
