@@ -1,81 +1,113 @@
 # Student Management REST API
 
-A backend REST API built using **Java and Spring Boot** that provides basic CRUD operations for managing student records.
+![Repo Size](https://img.shields.io/github/repo-size/peeyush-pareek-in-tallinn/REST-APIs---Student-Management?style=flat-square)
+![Contributors](https://img.shields.io/github/contributors/peeyush-pareek-in-tallinn/REST-APIs---Student-Management?style=flat-square)
+![License](https://img.shields.io/github/license/peeyush-pareek-in-tallinn/REST-APIs---Student-Management?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/peeyush-pareek-in-tallinn/REST-APIs---Student-Management?style=flat-square)
 
-This project was created as part of my learning journey into **backend development and REST API design**.
+A Spring Boot REST API for managing student records. This project provides CRUD operations, demonstrates clean RESTful API design, and follows a layered architecture with controllers, services, and repositories. Ideal for learning backend development with Java.
 
----
+## Table of Contents
+
+- Features
+- Tech Stack
+- Getting Started
+- API Endpoints
+- Project Structure
+- Contributing
+- License
+- Acknowledgements
 
 ## Features
 
-- Create student records
-- Retrieve student information
-- Update student details
-- Delete student records
-- RESTful API structure following standard HTTP methods
-
----
+- Student Management – Create, read, update, and delete student records  
+- RESTful API – Structured endpoints for frontend or client applications  
+- Layered Architecture – Clear separation between controllers, services, and repositories  
+- Exception Handling – Robust error management for invalid requests  
+- DTOs – Clean data transfer between layers  
 
 ## Tech Stack
 
-- **Java**
-- **Spring Boot**
-- **Spring Web**
-- **Maven**
-- REST API architecture
+| Layer       | Technology |
+|------------|------------|
+| Backend    | Java (Spring Boot) |
+| Web        | Spring MVC / REST |
+| Data       | JPA / Hibernate |
+| Database   | MySQL / PostgreSQL |
+| Build      | Maven |
+| Testing    | JUnit / Mockito (optional) |
+| Code Quality | Lombok (optional) |
 
----
+## Getting Started
 
-## API Endpoints
+### Installation
 
-| Method | Endpoint | Description |
-|------|------|-------------|
-| GET | /students | Get all students |
-| GET | /students/{id} | Get student by ID |
-| POST | /students | Create a new student |
-| PUT | /students/{id} | Update student details |
-| DELETE | /students/{id} | Delete a student |
+``bash
+git clone https://github.com/peeyush-pareek-in-tallinn/REST-APIs---Student-Management.git
+cd REST-APIs---Student-Management
 
----
+Open in your IDE (IntelliJ, Eclipse, VS Code) and ensure:
 
-## Example Request
+Java 17+ installed
 
-POST `/students`
+Maven installed
 
-``json
- {
-   "name": "John Doe",
-   "email": "john@example.com",
-   "course": "Computer Science"
- }
+A running SQL database (MySQL recommended)
 
----
+Configuration
 
-## Running the Project
+Update application.properties with your database credentials:
 
-Clone the repository: 
-  git clone https://github.com/peeyush-pareek-in-tallinn/REST-APIs--Student-Management.git
+spring.datasource.url=jdbc:mysql://localhost:3306/student_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+Run the App
+mvn clean install
+mvn spring-boot:run
 
-Navigate to the project directory: 
-  cd REST-APIs--Student-Management
+APIs will be available at: http://localhost:8080/api/
 
-Run the application: 
-  mvn spring-boot:run
+API Endpoints (Example)
+Endpoint	Method	Description
+/api/students	GET	List all students
+/api/students/{id}	GET	Get student by ID
+/api/students	POST	Create a new student
+/api/students/{id}	PUT	Update student by ID
+/api/students/{id}	DELETE	Delete student by ID
+Project Structure
+src/
+├── main/
+│   ├── java/
+│   │   └── com.example.student/
+│   │       ├── controller/
+│   │       ├── service/
+│   │       ├── dto/
+│   │       ├── model/
+│   │       ├── repository/
+│   │       └── exception/
+│   └── resources/
+│       └── application.properties
+Contributing
 
-The API will start at: 
-  http://localhost:8080
+Star the repo
 
----
+Fork it
 
+Create a branch
 
-## Learning Goals
+Implement your feature
 
-This project helped me practice:
+Open a Pull Request
 
-- REST API development using Spring Boot
-- Structuring backend services
-- Implementing CRUD operations
-- Understanding controller-service architecture
+License
+
+MIT License. See LICENSE for details.
+
+Acknowledgements
+
+This project is designed as a learning resource for building RESTful APIs with Java and Spring Boot. You can extend it for real-world applications or use it to practice backend development.
 
 ---
 
